@@ -1,6 +1,5 @@
 <?php
     require_once "libreria.php";
-
     $txtNombre = "";
     $txtCorreo = "";
     $intCantidadDeNoches = 1;
@@ -10,13 +9,13 @@
         $txtNombre = $_POST["txtNombre"];
         $txtCorreo = $_POST["txtCorreo"];
         $intCantidadDeNoches = $_POST["txtCantidadDeNoches"];
-        $txtCabania = $_POST["txtCabania"];
+        $cmbCabania = $_POST["cmbCabania"];
         // TODO: Agregar a la lista de sesión por medio de una función de librería
         agregarALista(
         $txtNombre, 
         $txtCorreo,
         $intCantidadDeNoches,
-        $txtCabania,
+        $cmbCabania,
         );
     }
 ?>
