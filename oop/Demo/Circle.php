@@ -2,7 +2,7 @@
     require_once "Demo/Formas.php";
     class Circle implements IFormas{
         private $ratio = 0;
-        private $pi =  pi();
+        private $pi =  M_PI;
         public function __construct($ratio)
         {
             $this->ratio = $ratio;

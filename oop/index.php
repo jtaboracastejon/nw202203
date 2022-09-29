@@ -25,7 +25,7 @@ $rect = new Rectangle(5,10);
 $square = new Square(10);
 $circle = new Circle(5);
 
-$arrForms = array($rect, $square);
+$arrForms = array($rect, $square, $circle);
 
 foreach($arrForms as $form){
     echo $form->getArea();
