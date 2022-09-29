@@ -2,6 +2,7 @@
 require_once "Demo/Vista.php";
 require_once "Demo/Rectangle.php";
 require_once "Demo/Square.php";
+require_once "Demo/Circle.php";
 
 $fulanito = new Vista("Fulanito de Tal C Desde El Constructor", "Honduras","10","20201209");
 $menganito = new Vista();
@@ -22,6 +23,7 @@ echo $menganito->printDatos();
 echo "<hr>";
 $rect = new Rectangle(5,10);
 $square = new Square(10);
+$circle = new Circle(5);
 
 $arrForms = array($rect, $square);
 
@@ -31,6 +33,6 @@ foreach($arrForms as $form){
     echo $form->getPerimetro();
     echo "<hr>";
 }
-//TODO: Tarea Clase del circulo area(pi*r^2) y perimetro(2*pi*r)
+//DONE TODO: Tarea Clase del circulo area(pi*r^2) y perimetro(2*pi*r)
 ?>
 
